@@ -1,0 +1,47 @@
+@use '../utils/main' as u;
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: tomato;
+  @extend %typo-navbar;
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin-top: 1rem;
+  }
+
+  &__list {
+    display: flex;
+
+    &__link {
+      padding: 1rem;
+      // display: block;
+    }
+    &__link:hover {
+      background-color: u.$white;
+      color: u.$black;
+    }
+  }
+
+  .toggle-btn {
+    position: absolute;
+    top: 75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  .toggle-btn .toggle-btn__bar {
+    height: 3px;
+    width: 100%;
+    background-color: u.$white;
+    border-radius: 10px;
+  }
+
+}
+
