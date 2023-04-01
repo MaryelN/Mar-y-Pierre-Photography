@@ -1,6 +1,12 @@
 
-@use "../utils/main" as u;
+@use '../utils/main' as u;
+@use '../layout/main';
 
 body {
   background-color: u.$black;
+  color: u.$white;
+}
+
+.home__title-1 {
+  @extend %typo-title;
 }

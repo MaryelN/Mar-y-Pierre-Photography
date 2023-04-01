@@ -1,3 +1,60 @@
 $font-primary: 'Noto Sans Khmer', sans-serif;
 $font-Title: 'Ovo', serif;
 $font-subtitles: 'Oxygen', sans-serif;
+
+%typo-title {
+  font-family: $font-Title;
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 0.12em;
+}
+
+
+%typo-navbar {
+  font-family: $font-subtitles;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+%typo-subtitle {
+  font-family: $font-subtitles;
+  font-weight: 400;
+  font-size: 1.75rem;
+  letter-spacing: 0.12em;
+}
+
+%typo-section {
+  font-family: $font-subtitles;
+  font-weight: 300;
+  font-size: 2.25rem;
+  line-height: 2.813rem;
+  text-align: center;
+}
+
+%typo-btn {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  line-height: 1.56rem;
+}
+
+%typo-services {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 3rem;
+}
+
+%typo-contact-title {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1rem;
+}
+
+%font-contact-p {
+  @extend %typo-contact-title;
+  font-size: 1rem;
+}
