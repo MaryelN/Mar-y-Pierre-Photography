@@ -20,31 +20,29 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@300;400&family=Ovo&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-dn5Keg6g7Ji5cS3IzHmqsq9ms1ijgKp+OGwW8Vv3q3gtp2kLrCtRJ8Vh1X/yO55aTfo07+tFbTy2eINP70T/nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="/assets/css/style.min.css">
   <title>Mar y Pierre</title>
+
 </head>
 <body>
   <!-- HEADER ( LOGO, NAVBAR) -->
-  <header class="flux">
-    <nav class="nav">
-      
-        <img class="logo" src="/assets/images/Logo.png" alt="logo">
-      <div> 
-        <a href="#" class="toggle-btn">
-          <span class="toggle-btn__bar"></span>
-          <span class="toggle-btn__bar"></span>
-          <span class="toggle-btn__bar"></span>
-        </a>
+  <header class="header flux">
+    <img class="logo" src="/assets/images/Logo.png" alt="logo">
+    <div>
+      <nav class="nav">
+          <a class="nav__link">Home</a></li>
+          <a class="nav__link">About Us</a></li>
+          <a class="nav__link">Gellery</a></li>
+          <a class="nav__link">Contact</a></li>
+        
+      </nav>
+      <div href="#" onclick="showMenu()" class="hamburger">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
       </div>
-        <ul class="nav__list">
-          <li class="nav__list__link"><a>Home</a></li>
-          <li class="nav__list__link"><a>About</a></li>
-          <li class="nav__list__link"><a>Portfolio</a></li>
-          <li class="nav__list__link"><a>Services</a></li>
-          <li class="nav__list__link"><a>Contact</a></li>
-        </ul>
-     
-    </nav>
+    </div>
   </header>
 
   <main class="flux">
@@ -138,5 +136,9 @@
   <footer>
 
   </footer>
+
+  <!--JS-->
+
+  <script src="/assets/main.js"></script>
 </body>
 </html>
